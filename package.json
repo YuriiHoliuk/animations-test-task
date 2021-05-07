@@ -2,8 +2,7 @@
   "name": "animations-test-task",
   "version": "1.0.0",
   "description": "animations-test-task",
-  "main": "dist/index.html",
-  "source": "src/index.html",
+  "main": "docs/index.html",
   "targets": {
     "main": {
       "publicUrl": ".",
@@ -15,7 +14,7 @@
     "deploy": "gh-pages -d docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rm -rf ./docs",
-    "build": "parcel build",
+    "build": "parcel build ./src/index.html",
     "start": "parcel serve ./src/index.html --open",
     "lint-js": "eslint ./src",
     "lint-js:fix": "eslint ./src --fix",
